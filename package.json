@@ -1,0 +1,39 @@
+{
+  "name": "amap-web-api-sdk",
+  "version": "0.0.0",
+  "description": "my extraordinary project",
+  "repository": {
+    "url": "sinchang/amap-web-api-sdk",
+    "type": "git"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test:cov": "jest --coverage && npm run lint",
+    "test": "npm run lint && jest",
+    "test:local": "jest",
+    "lint": "standard"
+  },
+  "author": "sinchang <sinchangwen@gmail.com>",
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "jest-cli": "^22.1.4",
+    "standard": "^10.0.0"
+  }
+}
