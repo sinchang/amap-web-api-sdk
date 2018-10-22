@@ -20,6 +20,10 @@ aMap.geocode.geo(data).then(res => {
 })
 ```
 
+## Reference
+
+- [Web 服务 API | 高德地图](https://lbs.amap.com/api/webservice/summary)
+
 ## Contributing
 
 1. Fork it!
