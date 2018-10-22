@@ -1,6 +1,6 @@
 # amap-web-api-sdk
 
-[![NPM version](https://img.shields.io/npm/v/amap-web-api-sdk.svg?style=flat)](https://npmjs.com/package/amap-web-api-sdk) [![NPM downloads](https://img.shields.io/npm/dm/amap-web-api-sdk.svg?style=flat)](https://npmjs.com/package/amap-web-api-sdk) [![CircleCI](https://circleci.com/gh/sinchang/amap-web-api-sdk/tree/master.svg?style=shield)](https://circleci.com/gh/sinchang/amap-web-api-sdk/tree/master) [![codecov](https://codecov.io/gh/sinchang/amap-web-api-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/sinchang/amap-web-api-sdk)
+[![NPM version](https://img.shields.io/npm/v/amap-web-api-sdk.svg?style=flat)](https://npmjs.com/package/amap-web-api-sdk) [![NPM downloads](https://img.shields.io/npm/dm/amap-web-api-sdk.svg?style=flat)](https://npmjs.com/package/amap-web-api-sdk) [![Build Status](https://travis-ci.org/sinchang/amap-web-api-sdk.svg?branch=master)](https://travis-ci.org/sinchang/amap-web-api-sdk) [![codecov](https://codecov.io/gh/sinchang/amap-web-api-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/sinchang/amap-web-api-sdk)
 
 ## Install
 
@@ -11,10 +11,13 @@ npm i amap-web-api-sdk
 ## Usage
 
 ```js
-const amapWebApiSdk = require('amap-web-api-sdk')
+const Amap = require('amap-web-api-sdk')
 
-amapWebApiSdk()
-//=> foo
+const aMap = new Amap(key)
+
+aMap.geocode.geo(data).then(res => {
+  console.log(res)
+})
 ```
 
 ## Contributing
