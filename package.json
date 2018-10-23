@@ -1,7 +1,7 @@
 {
   "name": "amap-web-api-sdk",
   "version": "0.0.0",
-  "description": "my extraordinary project",
+  "description": "Amap web api sdk",
   "repository": {
     "url": "sinchang/amap-web-api-sdk",
     "type": "git"
