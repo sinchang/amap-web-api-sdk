@@ -12,7 +12,7 @@ test('walking', async () => {
 })
 
 test('transit', async () => {
-  const res = await aMap.direction.transit({
+  const res = await aMap.direction.transit.integrated({
     origin: '116.481028,39.989643',
     destination: '116.434446,39.90816',
     city: '北京'
@@ -26,7 +26,7 @@ test('transit', async () => {
 test('driving', async () => {
   const res = await aMap.direction.driving({
     origin: '116.481028,39.989643',
-    destination: '116.434446,39.90816',
+    destination: '116.434446,39.90816'
   })
 
   expect(res.route.origin).toBe('116.481028,39.989643')
@@ -37,7 +37,7 @@ test('driving', async () => {
 test('bicycling', async () => {
   const res = await aMap.direction.bicycling({
     origin: '116.481028,39.989643',
-    destination: '116.434446,39.90816',
+    destination: '116.434446,39.90816'
   })
 
   expect(res.data.origin).toBe('116.481028,39.989643')
@@ -55,13 +55,4 @@ test('truck', async () => {
   expect(res.data.route.origin).toBe('116.481028,39.989643')
   expect(res.data.route.destination).toBe('116.434446,39.90816')
   expect(res.data.route.paths.length).toBeGreaterThan(0)
-})
-
-test('distance', async () => {
-  const res = await aMap.direction.distance({
-    origins: '116.481028,39.989643',
-    destination: '116.434446,39.90816',
-  })
-
-  expect(res.results.length).toBeGreaterThan(0)
 })
