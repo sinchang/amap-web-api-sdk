@@ -12,8 +12,8 @@ const Geofence = require('./lib/api/geofence')
 const Grasproad = require('./lib/api/grasproad')
 
 module.exports = class Amap {
-  constructor (key) {
-    this.request = new Request(key)
+  constructor (key, sk) {
+    this.request = new Request(key, sk)
     this.geocode = new Geocode(this.request)
     this.place = new Place(this.request)
     this.direction = new Direction(this.request)
