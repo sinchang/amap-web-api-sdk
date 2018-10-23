@@ -8,10 +8,12 @@ const Config = require('./lib/api/config')
 const Assistant = require('./lib/api/assistant')
 const Weather = require('./lib/api/weather')
 const Traffic = require('./lib/api/traffic')
+const Geofence = require('./lib/api/geofence')
+const Grasproad = require('./lib/api/grasproad')
 
 module.exports = class Amap {
-  constructor (key) {
-    this.request = new Request(key)
+  constructor (key, sk) {
+    this.request = new Request(key, sk)
     this.geocode = new Geocode(this.request)
     this.place = new Place(this.request)
     this.direction = new Direction(this.request)
@@ -19,6 +21,8 @@ module.exports = class Amap {
     this.assistant = new Assistant(this.request)
     this.weather = new Weather(this.request)
     this.traffic = new Traffic(this.request)
+    this.geofence = new Geofence(this.request)
+    this.grasproad = new Grasproad(this.request)
   }
 
   distance (data) {
@@ -33,7 +37,7 @@ module.exports = class Amap {
     return this.request.send('GET', 'v3/staticmap', data)
   }
 
-  patch (data) {
-    return this.request.send('GET', 'v3/patch', data)
+  batch (data) {
+    return this.request.send('POST', 'v3/batch', data)
   }
 }

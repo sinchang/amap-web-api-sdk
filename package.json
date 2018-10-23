@@ -14,7 +14,8 @@
     "test:cov": "jest --coverage && npm run lint",
     "test": "npm run lint && jest",
     "test:local": "jest",
-    "lint": "standard"
+    "lint": "standard",
+    "semantic-release": "semantic-release"
   },
   "author": "sinchang <sinchangwen@gmail.com>",
   "license": "MIT",
@@ -30,10 +31,12 @@
     "node": ">=8"
   },
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "md5": "^2.2.1"
   },
   "devDependencies": {
     "jest-cli": "^22.1.4",
+    "semantic-release": "^15.10.5",
     "standard": "^10.0.0"
   }
 }
