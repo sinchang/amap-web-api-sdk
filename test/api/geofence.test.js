@@ -39,7 +39,7 @@ test('update', async () => {
     gid
   )
 
-  expect(res.data.message).toBe('成功')
+  expect(res.errcode).toBe(0)
 })
 
 test('status', async () => {
