@@ -4,6 +4,7 @@ const assert = require('assert')
 const Request = require('./lib/request')
 const Geocode = require('./lib/api/geocode')
 const Place = require('./lib/api/place')
+const Direction = require('./lib/api/direction')
 
 module.exports = class Amap {
   constructor (key) {
@@ -11,5 +12,6 @@ module.exports = class Amap {
     this.request = new Request(key)
     this.geocode = new Geocode(this.request)
     this.place = new Place(this.request)
+    this.direction = new Direction(this.request)
   }
 }
