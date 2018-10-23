@@ -1,5 +1,6 @@
 const Amap = require('../index')
-const aMap = new Amap('5b469919c6dfb90c2c95796078f9a7e8')
+const key = '5b469919c6dfb90c2c95796078f9a7e8'
+const aMap = new Amap(key)
 
 test('distance', async () => {
   const res = await aMap.distance({
@@ -24,4 +25,21 @@ test('staticmap', async () => {
   })
 
   expect.stringContaining(res, 'v3/staticmap')
+})
+
+test('batch', async () => {
+  const res = await aMap.batch({
+    ops: [
+      {
+        url:
+          `/v3/place/around?offset=10&page=1&key=${key}&location=116.50394379585519,39.278209477408794&output=json&radius=100000&types=080000`
+      },
+      {
+        url:
+          `/v3/place/around?offset=10&page=1&key=${key}&location=118.50394379585519,39.278209477408794&output=json&radius=100000&types=080000`
+      }
+    ]
+  })
+
+  expect(res.length).toBe(2)
 })
