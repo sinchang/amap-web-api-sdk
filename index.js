@@ -5,6 +5,7 @@ const Request = require('./lib/request')
 const Geocode = require('./lib/api/geocode')
 const Place = require('./lib/api/place')
 const Direction = require('./lib/api/direction')
+const Config = require('./lib/api/config')
 
 module.exports = class Amap {
   constructor (key) {
@@ -13,5 +14,6 @@ module.exports = class Amap {
     this.geocode = new Geocode(this.request)
     this.place = new Place(this.request)
     this.direction = new Direction(this.request)
+    this.config = new Config(this.request)
   }
 }
