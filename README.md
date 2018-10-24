@@ -1,6 +1,6 @@
 # amap-web-api-sdk
 
-[![NPM version](https://img.shields.io/npm/v/amap-web-api-sdk.svg?style=flat)](https://npmjs.com/package/amap-web-api-sdk) [![NPM downloads](https://img.shields.io/npm/dm/amap-web-api-sdk.svg?style=flat)](https://npmjs.com/package/amap-web-api-sdk) [![Build Status](https://travis-ci.org/sinchang/amap-web-api-sdk.svg?branch=master)](https://travis-ci.org/sinchang/amap-web-api-sdk) [![codecov](https://codecov.io/gh/sinchang/amap-web-api-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/sinchang/amap-web-api-sdk)
+[![NPM version](https://img.shields.io/npm/v/amap-web-api-sdk.svg?style=flat)](https://npmjs.com/package/amap-web-api-sdk) [![NPM downloads](https://img.shields.io/npm/dm/amap-web-api-sdk.svg?style=flat)](https://npmjs.com/package/amap-web-api-sdk) [![Build Status](https://travis-ci.org/sinchang/amap-web-api-sdk.svg?branch=master)](https://travis-ci.org/sinchang/amap-web-api-sdk) [![codecov](https://codecov.io/gh/sinchang/amap-web-api-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/sinchang/amap-web-api-sdk) [![Greenkeeper badge](https://badges.greenkeeper.io/sinchang/amap-web-api-sdk.svg)](https://greenkeeper.io/)
 
 ## Install
 
