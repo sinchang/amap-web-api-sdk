@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "jest-cli": "^23.6.0",
-    "semantic-release": "^15.11.0",
+    "semantic-release": "^15.13.30",
     "standard": "^13.0.1"
   }
 }
